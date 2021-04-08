@@ -4,6 +4,7 @@ const Navbar = () => {
         <>
             <nav className="navbar">
                 <h2 className="logoNavbar">PokedeX</h2>
+                
             </nav>
         </>
     );

@@ -7,11 +7,11 @@ export const Searchbar = () => {
     const [inputSearch, setSearchValue] = useState('');//estado actual string vacio
     const [pokemon, setPokemon] = useState();
     const handleInputChange = (evt) =>{
-        setSearchValue(evt.target.value)
+        setSearchValue(evt.target.value);
     }
 
     const handleSearch = async (evt) => {
-        
+        evt.preventDefault();
         if(inputSearch.trim().length > 2 ){
             const data = await getPokemons(inputSearch);
             setPokemon(data);
